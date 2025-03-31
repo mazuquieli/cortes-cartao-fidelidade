@@ -61,6 +61,9 @@ async function displayClientInfo(cardId) {
 
     appointmentList.appendChild(listItem);
   });
+  if (client.loyaltyCard.cutsNeeded === client.loyaltyCard.totalCuts) {
+    alert("Parabéns! Seu próximo corte é gratuito!");
+  }
 }
 
 function numeroExtenso(num) {
@@ -141,35 +144,6 @@ function generateStamps(completedCuts, totalNeeded) {
 
     stampsContainer.appendChild(rowDiv);
   }
-}
-
-if (congratulationsModal) {
-  const closeButton =
-    document.querySelector(".close-button") ||
-    document.querySelector("#congratulations-modal .close") ||
-    document.querySelector("#modal-close");
-
-  const okButton =
-    document.querySelector("#modal-ok-button") ||
-    document.querySelector("#congratulations-modal button");
-
-  if (closeButton) {
-    closeButton.addEventListener("click", () => {
-      congratulationsModal.style.display = "none";
-    });
-  }
-
-  if (okButton) {
-    okButton.addEventListener("click", () => {
-      congratulationsModal.style.display = "none";
-    });
-  }
-
-  window.addEventListener("click", (event) => {
-    if (event.target === congratulationsModal) {
-      congratulationsModal.style.display = "none";
-    }
-  });
 }
 
 searchButton.addEventListener("click", () => {
