@@ -1,0 +1,63 @@
+.progress-card {
+  grid-area: progress-card;
+  background-color: var(--basewhite);
+  display: grid;
+  grid-template-areas: "remaining-info remaining-info remaining-info remaining-info remaining-info" "progress-bar progress-bar progress-bar progress-count gift-icon";
+  align-items: center;
+}
+
+.remaining-info {
+  grid-area: remaining-info;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.remaining-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.gift-icon {
+  grid-area: gift-icon;
+  width: 64px;
+  height: 64px;
+  background-color: var(--basegray-200);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.gift-icon img {
+  padding: 13px;
+  width: 90%;
+  height: 90%;
+}
+
+.progress-bar {
+  grid-area: progress-bar;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  width: 410px;
+  align-items: center;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--progress-gradient);
+  border-radius: 10px;
+}
+
+.progress-count {
+  grid-area: progress-count;
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  align-items: center;
+}

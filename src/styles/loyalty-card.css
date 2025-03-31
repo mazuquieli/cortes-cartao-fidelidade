@@ -1,0 +1,78 @@
+.loyalty-card {
+  display: flex;
+  width: 570px;
+  grid-area: loyalty-card;
+  background-color: var(--basewhite);
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.loyalty-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.loyalty-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.loyalty-header p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.card-id-container {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+}
+
+.card-id-container span {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.stamps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stamps-row {
+  display: flex;
+
+  gap: 1.5rem;
+}
+
+.stamp {
+  background-color: var(--basegray-200);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+}
+
+.stamp.active {
+  background-image: url("./../assets/pinCheck.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stamp.gift {
+}
+
+.stamp img {
+  width: 50%;
+  height: 50%;
+}

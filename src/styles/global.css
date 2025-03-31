@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mainpink: #d658b3;
+  --maingreen: #45b442;
+  --basewhite: #ffffff;
+  --basegray-100: #f4f1f2;
+  --basegray-200: #e9e7e9;
+  --basegray-300: #dfdcdf;
+  --basegray-400: #d3cfd2;
+  --basegray-500: #756c71;
+  --basegray-600: #4a4448;
+  --basegray-700: #332b31;
+  font-family: "Oxygen", Helvetica;
+  font-size: 16px;
+  --primary-color: #e54fc5;
+  --secondary-color: #8a4bdb;
+  --background-color: #ebebeb;
+  --card-background: #ffffff;
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --border-color: #e0e0e0;
+  --check-color: #46c476;
+  --progress-gradient: linear-gradient(
+    90deg,
+    #46c476 0%,
+    #4c7ff2 50%,
+    #e54fc5 100%
+  );
+}
+
+body {
+  background-color: var(--basegray-200);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 64px;
+}
+
+.logo {
+  width: 120px;
+  height: 60px;
+}
+
+.search-container {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  height: 60px;
+  margin-bottom: 60px;
+  background-color: var(--basegray-300);
+  border-radius: 8px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-container button {
+  width: 40px;
+  height: 40px;
+  background-color: var(--basegray-700);
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+
+  border-radius: 8px;
+}
+
+.search-container button img {
+  width: 24px;
+  height: 24px;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    "client-card loyalty-card "
+    "history-card loyalty-card"
+    "history-card progress-card";
+
+  grid-gap: 24px;
+}
+
+.card {
+  background-color: var(--card-background);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 767px) {
+  .content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .client-card {
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    width: 100%;
+  }
+
+  .loyalty-card {
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    width: a50%;
+  }
+
+  .history-card {
+    grid-column: 1;
+    grid-row: 3;
+    align-items: center;
+    width: auto;
+  }
+
+  .progress-card {
+    grid-column: 1;
+    grid-row: 4;
+    align-items: center;
+    width: auto;
+  }
+
+  .stamp {
+    width: 50px;
+    height: 50px;
+  }
+
+  .stamp img {
+    width: 24px;
+    height: 24px;
+  }
+}

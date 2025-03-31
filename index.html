@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Member Club</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <img class="logo" src="src/assets/logo.png" />
+      </header>
+
+      <div class="search-container">
+        <input type="text" id="card-id" placeholder="ID do cartão" />
+        <button type="button" id="search-button">
+          <img src="./src/assets/arrowLeft.svg" alt="Buscar" />
+        </button>
+      </div>
+
+      <div class="content">
+        <!-- Cliente Info Card -->
+        <div class="card client-card">
+          <div class="client-photo">
+            <img
+              src="./src/assets/picture.png"
+              alt="Foto do cliente"
+              id="client-photo"
+            />
+          </div>
+          <div class="client-details">
+            <h2 id="client-name">Natália Miranda</h2>
+            <p id="client-since">Cliente desde 18/09/2023</p>
+          </div>
+        </div>
+        <!-- History Card -->
+        <div class="card history-card">
+          <div class="history-header">
+            <h3>HISTÓRICO</h3>
+            <span id="total-cuts">8 cortes</span>
+          </div>
+          <ul class="history-list" id="appointment-list">
+            <li class="history-item">
+              <div class="history-date">
+                <div>29/04/2024</div>
+                <div class="history-time">18:30</div>
+              </div>
+              <div class="history-check">
+                <img src="./src/assets/vector1.svg" alt="Concluído" />
+              </div>
+            </li>
+            <li class="history-item">
+              <div class="history-date">
+                <div>16/03/2024</div>
+                <div class="history-time">17:00</div>
+              </div>
+              <div class="history-check">
+                <img src="./src/assets/vector1.svg" alt="Concluído" />
+              </div>
+            </li>
+            <li class="history-item">
+              <div class="history-date">
+                <div>01/02/2024</div>
+                <div class="history-time">17:30</div>
+              </div>
+              <div class="history-check">
+                <img src="./src/assets/vector1.svg" alt="Concluído" />
+              </div>
+            </li>
+            <li class="history-item">
+              <div class="history-date">
+                <div>03/01/2024</div>
+                <div class="history-time">15:00</div>
+              </div>
+              <div class="history-check">
+                <img src="./src/assets/vector1.svg" alt="Concluído" />
+              </div>
+            </li>
+            <li class="history-item">
+              <div class="history-date">
+                <div>28/11/2023</div>
+                <div class="history-time">14:00</div>
+              </div>
+              <div class="history-check">
+                <img src="./src/assets/vector1.svg" alt="Concluído" />
+              </div>
+            </li>
+            <li class="history-item">
+              <div class="history-date">
+                <div>23/10/2023</div>
+                <div class="history-time">14:00</div>
+              </div>
+              <div class="history-check">
+                <img src="./src/assets/vector1.svg" alt="Concluído" />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Loyalty Card -->
+        <div class="card loyalty-card">
+          <div class="loyalty-header">
+            <div>
+              <h3>CARTÃO FIDELIDADE</h3>
+              <p id="count-text">
+                Ao fazer cortes de cabelo, o décimo sai de graça!
+              </p>
+            </div>
+            <div class="card-id-container">
+              <span id="card-id-number">ID: 124-537-835-230</span>
+            </div>
+          </div>
+
+          <div class="stamps-container">
+            <div class="stamps-row">
+              <div class="stamp active"></div>
+              <div class="stamp active"></div>
+              <div class="stamp active"></div>
+              <div class="stamp active"></div>
+              <div class="stamp active"></div>
+            </div>
+            <div class="stamps-row">
+              <div class="stamp active"></div>
+              <div class="stamp active"></div>
+              <div class="stamp"></div>
+              <div class="stamp"></div>
+              <div class="stamp gift">
+                <img src="/src/assets/gift-fill.svg" alt="Prêmio" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Progress Card -->
+        <div class="card progress-card">
+          <div class="remaining-info">
+            <h3><span id="cuts-remaining">3</span> cortes restantes</h3>
+          </div>
+          <div class="gift-icon">
+            <img src="/src/assets/gift.svg" alt="Prêmio" />
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 70%"></div>
+          </div>
+          <div class="progress-count">
+            <span id="cuts-completed">7</span> de
+            <span id="cuts-needed">10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

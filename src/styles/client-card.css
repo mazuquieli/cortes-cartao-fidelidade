@@ -1,0 +1,32 @@
+.client-card {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  grid-area: client-card;
+  background-color: var(--basewhite);
+}
+
+.client-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.client-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-details h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.client-details p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}

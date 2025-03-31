@@ -1,0 +1,164 @@
+@media (max-width: 767px) {
+  .container {
+    padding: 0.8rem;
+    max-width: 100%;
+  }
+
+  .main-header {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 50px;
+  }
+
+  .search-container {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: 50px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "client-card"
+      "loyalty-card"
+      "progress-card"
+      "history-card";
+    grid-gap: 12px;
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 1rem;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .client-card {
+    grid-area: client-card;
+    width: 100%;
+  }
+
+  .client-photo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .client-details h2 {
+    font-size: 1rem;
+  }
+
+  .client-details p {
+    font-size: 0.75rem;
+  }
+
+  .loyalty-card {
+    grid-area: loyalty-card;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .loyalty-header {
+    margin-bottom: 0.5rem;
+  }
+
+  .loyalty-header h3 {
+    font-size: 0.9rem;
+  }
+
+  .loyalty-header p {
+    font-size: 0.75rem;
+  }
+
+  .stamps-container {
+    gap: 8px;
+  }
+
+  .stamps-row {
+    gap: 4px;
+  }
+
+  .stamp {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  .stamp img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .progress-card {
+    grid-area: progress-card;
+    width: 100%;
+    grid-template-areas:
+      "remaining-info remaining-info remaining-info gift-icon"
+      "progress-bar progress-bar progress-count gift-icon";
+  }
+
+  .remaining-info {
+    margin-bottom: 0.5rem;
+  }
+
+  .remaining-info h3 {
+    font-size: 0.9rem;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+  }
+
+  .progress-count {
+    font-size: 0.75rem;
+  }
+
+  .gift-icon {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+  }
+
+  .history-card {
+    grid-area: history-card;
+    width: 100%;
+  }
+
+  .history-header h3 {
+    font-size: 0.9rem;
+  }
+
+  .history-header span {
+    font-size: 0.75rem;
+  }
+
+  .history-item {
+    padding: 0.4rem 0;
+  }
+
+  .history-date {
+    font-size: 0.8rem;
+  }
+
+  .history-time {
+    font-size: 0.7rem;
+  }
+
+  .history-check img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .card-id-container {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .card-id-container span {
+    font-size: 0.7rem;
+  }
+}
